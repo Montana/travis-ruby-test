@@ -3,3 +3,4 @@ dist: xenial
 language: ruby
 rvm:
   - 2.5.7
+install: skip
