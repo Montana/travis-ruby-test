@@ -4,8 +4,14 @@ jobs:
           osx_image: xcode13.1
           sudo: false
           install: skip
+          script: 
+           - xcrun instruments -s devices
+           - echo staring build and test...
+           - open -a "simulator" --args -CurrentDeviceUDID $UDID
+           - xcrun simctl list devices
 
         - language: ruby
           rvm: 2.7.5
           install: skip
           script: ruby -v
+
