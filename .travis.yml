@@ -3,6 +3,7 @@ jobs:
         - language: objective-c
           osx_image: xcode13.1
           sudo: false
+          install: skip
 
         - language: ruby
           rvm: 2.7.5
