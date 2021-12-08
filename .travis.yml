@@ -1,5 +1,3 @@
-dist: focal
-
 jobs:
     include:
         - language: objective-c
